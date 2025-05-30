@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contact - Gabrieluxe Media">
+        <title>Contact - Gabrieluxe Media</title>
+        <link rel="stylesheet" href="style/general.css">
+        <link rel="stylesheet" href="style/contact.css">
+    </head>
+
+    <body>
+
+        <!-- top promo bar -->
+        <div class="top-bar">
+            <div class="container">
+                <p>Claim your complimentary website audit today!</p>
+                <div class="phone">
+                    <img src="images/icons/phone.svg" alt="Phone icon">
+                    <span>Call us now! (825) 365-8126</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- header/menu bar -->
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Gabrieluxe Media Logo">
+                </a>
+                <h1>
+                    <span class="brand-main">GabrieLuxe</span>
+                    <span class="brand-sub">Media</span>
+                </h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown"><a href="services.html">Services ▾</a>
+                        <ul class="submenu">
+                            <li><a href="services.html#web">Web & Mobile</a></li>
+                            <li><a href="services.html#graphic">Graphic Design</a></li>
+                            <li><a href="services.html#ecommerce">eCommerce</a></li>
+                            <li><a href="services.html#hosting">Hosting</a></li>
+                            <li><a href="services.html#marketing">Digital Marketing</a></li>
+                            <li><a href="services.html#seo">SEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html"  class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main content -->
+        <main>
+
+            <section class="banner">
+                <div class="banner-overlay">
+                    <div class="container banner-content">
+                        <h1>Contact Us</h1>
+                    </div>
+                </div>
+            </section>
+        
+            <!--Pre Contact Section -->
+            <section class="pre-contact">
+                <div class="pre-col">
+                    <h3>Let's Talk!</h3>
+                    <p>Request a free website audit from the best reviewed business in the market! </p>
+                    <img src="images/google-review.png" alt="5 stars on Google!" class="google-review-badge badge-medium">
+                </div>
+                <div class="pre-col">
+                    <h4>Calgary Main Office</h4>
+                    <p>305 18 Ave SW, <br>Calgary AB T2S 3H1</p>
+                    <h4>Calgary Mount Royal University Labs</h4>
+                    <p>4828 Mount Royal Gate SW, <br>Calgary AB T3E 6K6</p>
+                    <h4>Toronto CN Tower Office</h4>
+                    <p>290 Bremner Blvd, <br>Toronto ON M5V 3L9</p>
+                </div>
+                <div class="pre-col social">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.facebook.com/gabrieluxemedia" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/gabrieluxemedia" target="_blank">Instagram</a>
+                    <a href="https://x.com/gabrieluxemedia" target="_blank">X (Former Twitter)</a>
+                    <a href="https://www.linkedin.com/in/gabrieluxemedia">LinkedIn</a>
+                </div>
+            </section>
+
+            <!-- Contact Form (what a headache)-->
+            <section class="contact-section">
+                
+                <div class="contact-wrap">
+                    <div class="intro">
+                        <h2>Let's Connect</h2>
+                        <p>Drop your email or phone below, and we'll send you a quick customized review.</p>
+                        <a href="portfolio.html" class="btn">Explore Our Projects</a>
+                    </div>
+                
+                    <form class="contact-form" action="mailto:info@gabrieluxe.com" method="post" enctype="text/plain">
+                
+                        <!-- Name -->
+                        <div class="row">
+                            <input type="text"  name="first-name" placeholder="First Name *" required>
+                            <input type="text"  name="last-name"  placeholder="Last Name">
+                        </div>
+                
+                        <!-- Email / Phone -->
+                        <div class="row">
+                            <input type="email" name="email" placeholder="Email *" required>
+                            <input type="tel"   name="phone" placeholder="Phone Number" pattern="\d{3}-\d{3}-\d{4}">
+                        </div>
+                
+                        <!-- Services -->
+                        <fieldset class="services">
+                            <legend>Services</legend>
+                            <div class="serv-grid">
+                                <label><input type="checkbox" name="service" value="web"> Web & Mobile</label>
+                                <label><input type="checkbox" name="service" value="graphic"> Graphic Design</label>
+                                <label><input type="checkbox" name="service" value="seo"> SEO</label>
+                                <label><input type="checkbox" name="service" value="hosting"> Hosting</label>
+                                <label><input type="checkbox" name="service" value="ecomm"> eCommerce</label>
+                                <label><input type="checkbox" name="service" value="marketing"> Digital Marketing</label>
+                            </div>
+                        </fieldset>
+                
+                        <!-- How did you hear? -->
+                        <div class="row">
+                            <select name="heard" required>
+                                <option value="" disabled selected>How did you hear about us?</option>
+                                <option>Google</option>
+                                <option>Facebook</option>
+                                <option>Referral</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                
+                        <!-- Additional Info -->
+                        <div class="row">
+                            <textarea name="details" placeholder="Additional Information"></textarea>
+                        </div>
+                
+                        <!-- Preferred Contact -->
+                        <fieldset class="contact-method">
+                            <legend>Preferred Contact</legend>
+                            <div class="radio-row">
+                                <label><input type="radio" name="contact-method" value="email" checked> Email</label>
+                                <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+                            </div>
+                        </fieldset>
+                
+                        <!-- Date picker -->
+                        <div class="row"><input type="date" name="date"></div>
+                
+                        <!-- Buttons -->
+                        <div class="row btn-row">
+                            <input type="reset"  value="Reset">
+                            <input type="submit" value="Send Message">
+                            </div>
+                
+                    </form>
+
+                </div>
+
+            </section>
+            
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <h2>We Are The Leaders</h2>
+                <div class="container stats-grid">
+                    <div class="stat-item">
+                        <img src="images/clients.png" alt="Campaigns delivered">
+                        <div class="number">500+</div>
+                        <div class="label">Clients Served</div>
+                    </div>
+                    <div class="stat-item">
+                        <img src="images/video.png" alt="Video views">
+                        <div class="number">1.8M+</div>
+                        <div class="label">Video Views</div>
+                    </div>
+                    <div class="stat-item">
+                        <img src="images/followers.png" alt="Social followers">
+                        <div class="number">55K+</div>
+                        <div class="label">Social Media Followers</div>
+                    </div>
+                    <div class="stat-item">
+                        <img src="images/reviews.png" alt="Client reviews">
+                        <div class="number">499</div>
+                        <div class="label">Client Reviews</div>
+                    </div>
+                </div>
+            </section>
+       
+        </main>
+    
+        <!-- footer -->
+        <footer class="footer">
+           
+            <div class="footer-container">
+           
+                <div class="footer-box contact-box">
+                    <h3>Get In Touch</h3>
+                    <p><img src="images/icons/location.svg" alt="Location" class="icon"> 305 18 AVE SW, Calgary, AB</p>
+                    <p><img src="images/icons/email.svg" alt="Email" class="icon"> <a href="mailto:info@gabrieluxe.com">info@gabrieluxe.com</a></p>
+                    <p><img src="images/icons/phone.svg" alt="Phone" class="icon"> <a href="tel:(825)365-8126">(825) 365-8126</a></p>
+                </div>
+            
+                <div class="footer-box">
+                    <h3>Site Map</h3>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            
+                <div class="footer-box">
+                    <h3>Services</h3>
+                    <a href="services.html#web">Web & Mobile Design</a>
+                    <a href="services.html#graphic">Graphic Design</a>
+                    <a href="services.html#ecommerce">eCommerce</a>
+                    <a href="services.html#hosting">Hosting</a>
+                    <a href="services.html#marketing">Digital Marketing</a>
+                    <a href="services.html#seo">Search Engine Optimization (SEO)</a>
+                </div>
+            
+                <div class="footer-box">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com/gabrieluxemedia" target="_blank"><img src="images/icons/facebook.svg" alt="Facebook" class="social-icon"></a>
+                    <a href="https://www.instagram.com/gabrieluxemedia" target="_blank"><img src="images/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+                    <a href="https://x.com/gabrieluxemedia" target="_blank"><img src="images/icons/x.svg" alt="X" class="social-icon"></a>
+                    <a href="https://www.linkedin.com/in/gabrieluxemedia" target="_blank"><img src="images/icons/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>© 2025 Gabrieluxe Media Inc. All Rights Reserved</p>
+                <a href="pdf/privacy.pdf" target="_blank">Privacy Policy</a>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
